@@ -24,6 +24,7 @@ pipeline {
 						-o './'
 						-s './'
 						-f 'ALL' 
+						--nvdApiKey '7ad48849-c21a-49f4-9ddb-85151d39d039'
 						--prettyPrint''', odcInstallation: 'OWASP Dependency-Check Vulnerabilities'
 				
 				ependencyCheckPublisher pattern: 'dependency-check-report.xml'
