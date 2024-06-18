@@ -21,9 +21,7 @@ pipeline {
 		stage('OWASP Dependency-Check Vulnerabilities') {
 			steps {
 				dependencyCheck additionalArguments: ''' 
-						-o './'
-						-s './'
-						-f 'ALL' 
+						-f 'HTML' 
 						--nvdApiKey '7ad48849-c21a-49f4-9ddb-85151d39d039'
 						--noupdate
 						--prettyPrint''', odcInstallation: 'OWASP Dependency-Check Vulnerabilities'
